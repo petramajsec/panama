@@ -1,8 +1,15 @@
 body {
     background-color: #FDEFEC;
     z-index: 0;
-    /*text-align: center;   temporaly */
+    font-family: Nunito, sans-serif;
   }
+
+  @font-face {
+    font-family: "Nunito";
+    src: url("../public/font/Nunito/static/Nunito-ExtraBold.ttf");
+    
+    
+    }
 
 .center {
     margin: auto;
@@ -40,13 +47,13 @@ header {
 }
 
 #overlay{
-  background: linear-gradient(to bottom, #070202, #e5e5e5);
-  opacity: 0.8;
+  background: linear-gradient(90deg, #2A0A48 30%, #AF6FEB 70%);
+  opacity: 0.9;
   width: 100vw;
   height: 100vh;
   display: none;
   z-index: 5;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -120,9 +127,9 @@ object:hover {
   background: linear-gradient(
     to bottom, 
     #F6A192, #F6A192 20%, 
-    #3F0F6C 20%, #3F0F6C 40%, 
+    #2A0A48 20%, #2A0A48 40%, 
     #F6A192 40%, #F6A192 60%, 
-    #3F0F6C 60%, #3F0F6C 80%, 
+    #2A0A48 60%, #2A0A48 80%, 
     #F6A192 80%, #F6A192 100%
   );
 }
@@ -183,19 +190,16 @@ footer {
     color: #0A0212;
     
     vertical-align: middle;
-    font-family: sans-serif;
     
   }
   p {
     color: #0A0212;
-    font-family: "Nunito";
   }
 
   h2 {
     color: #F6A192;
-    font-family: sans-serif;
-    font-size: 35px;
-    font-weight: 900;
+    font-size: 40px;
+    font-weight: 1000;
     -webkit-text-stroke: 1px #2A0A48;
     display:flex-start;
     height: auto;
@@ -206,6 +210,10 @@ footer {
 
   ul {
     list-style-type: none;
+  }
+
+  a {
+    font-family: Nunito;
   }
 
   
