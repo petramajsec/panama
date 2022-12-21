@@ -1,5 +1,5 @@
 body {
-    background-color: #FDEFEC;
+  background-image: linear-gradient(90deg, #FDEFEC , #F9BEB4 , #F37D68 , #F9BEB4, #FDEFEC );
     z-index: 0;
     font-family: Nunito, sans-serif;
   }
@@ -14,7 +14,13 @@ body {
 .center {
     margin: auto;
     width: 70%;
-    border: 3px 3px 0 3px solid #F6A192;
+    border-top: 0;
+    border-bottom: 0;
+    border-left:5px;
+    border-right:5px;
+    z-index: 0;
+    border-style:solid;
+    border-color: #F37D68;
     padding: 10px;
   }
 
@@ -110,7 +116,6 @@ object:hover {
   display: flex;
   height: auto;
   justify-content: flex-start;
-
 }
 
 
