@@ -6,9 +6,7 @@ body {
 
   @font-face {
     font-family: "Nunito";
-    src: url("../public/font/Nunito/static/Nunito-ExtraBold.ttf");
-    
-    
+    src: url("../public/font/Nunito/static/Nunito-ExtraBold.ttf"); 
     }
 
 .center {
@@ -28,8 +26,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  flex-direction: row;
-  
+  flex-direction: row; 
 }
 
 #sidebar-menu {
@@ -37,9 +34,7 @@ header {
   text-align: left;
   font-size: 25px;
   margin: 10px 0 0 45px ;
-  z-index: 10;
-
-  
+  z-index: 10; 
 }
 
 #menu {
@@ -78,9 +73,6 @@ object:hover {
   padding: 14px 16px;
   display: block;
   text-decoration: none; 
-  
-  
-  
 }
 
 /* Remove a grey background color on mouse-over */
@@ -94,7 +86,6 @@ object:hover {
     background-color: none;
     color: #FBDC89;
   }
-
 
 #menu{
   display:flex;
@@ -112,19 +103,19 @@ object:hover {
   justify-content: flex-start;
 }
 
-
-
 #hamburger-menu {
   width: 45px;
   height: 40px;
   margin: 30px 0 20px 20px;
+  background-color: transparent;
+  border-width: 0;
   cursor: pointer;
 }
 
 .bar {
   height: 5px;
   width: 100%;
-  background-color: #DC052D;
+  background-color: #F6A192;
   display: block;
   border-radius: 5px;
   transition: 0.3s ease;
@@ -143,7 +134,7 @@ object:hover {
 }
 
 .change .bar {
-  background-color: white;
+  background-color: #FBDC89;
 }
 
 .change #bar1 {
@@ -157,10 +148,6 @@ object:hover {
 .change #bar3 {
   transform: translateY(-6px) rotateZ(45deg);
 }
-
-
-
-
 
 #container-1 {
     background-image: url("../public/img/upscaled-bg-image.png");
@@ -184,7 +171,6 @@ object:hover {
   max-width:300px;
   font-size: 60px;
   font-weight: 1000;
-  
 }
 
 .main-title h1 {
@@ -204,8 +190,6 @@ object:hover {
   color:#FDEFEC;
   font-size:20px;
 }
-
-
 
 .landing-page {
   background-color: #FDEFEC;
@@ -244,11 +228,9 @@ footer {
   h1 {
     display:flex;
     color: #0A0212;
-    
-    vertical-align: middle;
-    
-    
+    vertical-align: middle;  
   }
+
   p {
     color: #0A0212;
   }
@@ -264,8 +246,6 @@ footer {
     padding-left: 15px;
     margin: 25px 0 0 0;
   }
-
-
 
   a {
     font-family: Nunito;
