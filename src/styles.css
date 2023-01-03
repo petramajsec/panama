@@ -75,11 +75,13 @@ object:hover {
   text-decoration: none; 
 }
 
+
 /* Remove a grey background color on mouse-over */
 #sidebar-menu  a:hover {
   background-color: #3F0F6C;
   color: #F6BA13;
-  text-decoration: none; 
+  text-decoration: none;
+   
 }
 
 #button-menu  {
