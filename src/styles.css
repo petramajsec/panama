@@ -69,19 +69,47 @@ object:hover {
 
 /* Style navigation menu links */
 #sidebar-menu  a {
-  color: #FBDC89;
   padding: 14px 16px;
   display: block;
-  text-decoration: none; 
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    #F6BA13,
+    #F6BA13 50%,
+    #FDEFEC 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0 0 20px;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out; 
 }
+
+#sidebar-menu a:before {
+  content: '';
+  background: #F6BA13;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
 
 
 /* Remove a grey background color on mouse-over */
 #sidebar-menu  a:hover {
-  background-color: #3F0F6C;
-  color: #F6BA13;
   text-decoration: none;
-   
+  background-position: 0;
+}
+
+#sidebar-menu a:hover::before {
+  width:100%;
 }
 
 #button-menu  {
