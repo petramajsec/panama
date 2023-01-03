@@ -63,12 +63,15 @@ object {
   filter: grayscale(100%)
 }
 
-object:hover {
+tr:hover object {
+  filter:none;
+}
+a:hover object {
   filter:none;
 }
 
 /* Style navigation menu links */
-#sidebar-menu  a {
+#sidebar-menu a {
   padding: 14px 16px;
   display: block;
   text-decoration: none;
@@ -100,15 +103,19 @@ object:hover {
   transition: all 0.3s ease-in-out;
 }
 
-
-
 /* Remove a grey background color on mouse-over */
 #sidebar-menu  a:hover {
   text-decoration: none;
   background-position: 0;
 }
 
-#sidebar-menu a:hover::before {
+/* Remove a grey background color on mouse-over */
+tr:hover #sidebar-menu  a {
+  text-decoration: none;
+  background-position: 0;
+}
+
+#sidebar-menu a:hover:before {
   width:100%;
 }
 
@@ -188,8 +195,7 @@ object:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin:-10px;
-    
+    margin:-10px; 
 }
 
 .main-title {
