@@ -234,29 +234,34 @@ tr:hover #sidebar-menu  a {
 
 #container-2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content:center;
+    align-items: center;
     flex-wrap: wrap;
     background-color: #F37D68;
     margin: 20px;
-    height: 200px;
+    height: 250px;
+    width: auto;
 }
 
-#center-animation {
- align-content: center;
-}
-
-#center-icon  {
-
-  align-self: center;
+#center-icon {
+  transform: rotateY(0deg) rotate(0deg);
+  transition: transform 2s;
   height: 120px;
   width: auto;
-  padding: 10px;
 
 }
 
-#title-2-container {
-  align-self: center;
+#center-icon:hover {
+  transform: rotateY(180deg) rotate(45deg);
+
+
+}
+
+
+#title-2-container h2 {
+ margin: 0;
+ padding: 0;
 }
 
 
