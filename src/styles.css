@@ -233,16 +233,18 @@ tr:hover #sidebar-menu  a {
 }
 
 #container-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    flex-wrap: wrap;
-    background: linear-gradient(180deg, rgba(243,125,104,1) 10%, rgba(253,239,236,1) 99%);
-    border-radius: 10px;
-    margin: 15px 5px 5px 0;
-    height: 250px;
-    width: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1px;
+  background: linear-gradient(rgb(63, 15, 108) 10%, rgb(249, 190, 180) 99%);
+  border-radius: 10px;
+  margin: 15px 5px 5px 0px;
+  height: 250px;
+  width: auto;
+  align-content: center;
+  flex-direction: column-reverse;
 }
 
 #center-icon {
@@ -255,14 +257,42 @@ tr:hover #sidebar-menu  a {
 
 #center-icon:hover {
   transform: rotateY(180deg) rotate(45deg);
+}
 
+#left-icon:hover {
+  transform: rotateY(180deg) rotate(45deg);
+}
+
+#right-icon:hover {
+  transform: rotateY(180deg) rotate(45deg);
+}
+
+
+#left-icon {
+  transform: rotateY(0deg) rotate(0deg);
+  transition: transform 2s;
+  height: 150px;
+  width: auto;
+  padding-right: 30px;
+  padding-top: 10px;
+
+}
+
+#right-icon {
+  transform: rotateY(0deg) rotate(0deg);
+  transition: transform 2s;
+  height: 150px;
+  width: auto;
+  transform: scaleX(-1);
+  padding-right: 30px;
+  padding-top: 10px;
 
 }
 
 
 #title-2-container h2 {
  margin: 0;
- padding: 0;
+ padding-bottom: 10px;
 }
 
 
