@@ -238,8 +238,9 @@ tr:hover #sidebar-menu  a {
     justify-content:center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #F37D68;
-    margin: 20px;
+    background: linear-gradient(180deg, rgba(243,125,104,1) 10%, rgba(253,239,236,1) 99%);
+    border-radius: 10px;
+    margin: 15px 5px 5px 0;
     height: 250px;
     width: auto;
 }
