@@ -267,7 +267,7 @@ tr:hover #sidebar-menu  a {
   transform: rotateY(180deg) rotate(45deg);
 }
 
-
+a
 #left-icon {
   transform: rotateY(0deg) rotate(0deg);
   transition: transform 2s;
@@ -295,14 +295,7 @@ tr:hover #sidebar-menu  a {
  padding-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
+/*add COMMENTSS*/
 #container-3 {
     background-color: #FDEFEC;
     height: 400px;
@@ -324,22 +317,39 @@ tr:hover #sidebar-menu  a {
 }
 
 #image-container-3 img {
-  height: 550px;
+  height: 350px;
+  z-index: -1;
 }
 
 #highlight-container-3-1 {
   
 }
+#highlight-container-3-1 {
+  width: 300px;
+} 
 
 #image-container-3{
   padding-left: 150px;
   max-height:350px;
   max-width: 320px;
   overflow: hidden;
+  position: relative;
 }
 
-#highlight-container-3-1 {
-  width: 300px;
+
+
+#button-container-3{
+  z-index: 5000;
+  position: absolute;
+  height: 20px;
+  bottom: 10px; 
+  right: 10px; 
+  width: auto;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px; /* rounded corners */
+  display: inline-block;
+  background-color: pink;
 }
 
 #container-4 {
