@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/petramajsec/panama/issues"
   },
-  "homepage": "https://github.com/petramajsec/panama#readme"
+  "homepage": "https://github.com/petramajsec/panama#readme",
+  "dependencies": {
+    "jquery": "^3.6.3"
+  }
 }
