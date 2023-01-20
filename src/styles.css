@@ -348,6 +348,10 @@ tr:hover #sidebar-menu  a {
   position: absolute;
   bottom: 0;
   z-index: 100;
+  font-size: 20px;
+  letter-spacing:1px;
+  text-decoration: none;
+  z-index: 150;
  
 }
 
@@ -519,14 +523,47 @@ tr:hover #sidebar-menu  a {
 }
 
 #container-4 {
-    background-color: #A2294C;
-    height: 150px;
+    background-color: #3F0F6C;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
 }
 
 #container-5 {
-    background-color: #0B4458;
+    background-color: #FDEFEC;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #F9BEB4;
+    border-radius: 10px;
     height: 510px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
 }
+
+#grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.grid-item {
+  width: 200px;
+  height: 120px;
+  background-color: #2A0A48;
+}
+
+#grid-item1 {
+  background-color:red;
+}
+
+
+
 footer {
     background-color: #401435;
     height: 200px;
