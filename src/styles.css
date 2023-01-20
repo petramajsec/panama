@@ -140,6 +140,7 @@ tr:hover #sidebar-menu  a {
   justify-content: flex-start;
 }
 
+/* its a button*/
 #hamburger-menu {
   width: 45px;
   height: 40px;
@@ -299,7 +300,7 @@ tr:hover #sidebar-menu  a {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: stretch;
     gap: 200px;
     border-style: solid;
     border-width: 5px;
@@ -309,20 +310,22 @@ tr:hover #sidebar-menu  a {
     
 }
 
-#highlight-container-3-1 h2{
-  padding: 0;
-}
 
 #image-container-3 img {
   height: 350px;
   z-index: -1;
-}
-
-#highlight-container-3-1 {
+  padding-top: 25px;
+  
   
 }
+
+
 #highlight-container-3-1 {
-  width: 300px;
+  width: 400px;
+  height: auto;
+  position:relative;
+  z-index: 5;
+  padding-top: 20px;
 } 
 
 #image-container-3{
@@ -330,36 +333,43 @@ tr:hover #sidebar-menu  a {
   max-height:500px;
   max-width: 500px;
   overflow: hidden;
-  position: relative;
+  position:relative;
+ 
 }
 
-
-button {
+/* cta is general button with a effect */
+.cta {
   width: 160px;
   height: 70px;
   background: #3F0F6C;
   cursor:pointer;
   border-radius: 25px;
-  margin: 100px;
+  margin: 50px;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+ 
 }
 
-button a {
+.cta  a {
   color: #F8C332;
   font-size: 20px;
   letter-spacing:1px;
   text-decoration: none;
+  z-index: 150;
 }
 
-/* let's shape */
-button span.shape {
+
+.cta  span.shape {
   height: 60px;
   width: 160px;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 
-button span span {
+.cta  span span {
   content:"";
   position: absolute;
   margin: auto;
@@ -367,93 +377,103 @@ button span span {
   width: 2px;
   background: #3F0F6C;
   opacity: 0;
+  z-index: 100;
 }
 
-button span span:nth-of-type(1) {
+.cta  span span:nth-of-type(1) {
   top: -20px;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 
-button span span:nth-of-type(2) {
+.cta  span span:nth-of-type(2) {
   bottom: -20px;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 
-button span span:nth-of-type(3) {
+.cta  span span:nth-of-type(3) {
   top:0;
   bottom: 0;
   left: -10px;
+  z-index: 100;
 }
 
-button span span:nth-of-type(4) {
+.cta  span span:nth-of-type(4) {
   top:0;
   bottom: 0;
   right: -10px;
+  z-index: 100;
 }
 
-button span span:nth-of-type(5) {
+.cta  span span:nth-of-type(5) {
   top: -20px;
   left: -70%;
   right: 0;
   transform:rotate(-30deg);
+  z-index: 100;
 }
 
-button span span:nth-of-type(6) {
+.cta  span span:nth-of-type(6) {
   top: -20px;
   left: 0;
   right: -70%;
   transform:rotate(30deg);
+  z-index: 100;
 }
 
-button span span:nth-of-type(7) {
+.cta  span span:nth-of-type(7) {
   bottom: -20px;
   right: 0;
   left: -70%;
   transform:rotate(30deg);
+  z-index: 100;
 }
 
-button span span:nth-of-type(8) {
+.cta  span span:nth-of-type(8) {
   bottom: -20px;
   left: 0;
   right: -70%;
   transform:rotate(-30deg);
+  z-index: 100;
 }
 
-/* let's animate this */
+/* button animation */
 @keyframes bounce {
   0%{transform: scale(1);}
   50%{transform: scale(1.1);}
   100%{transform: scale(1);}
 }
 
-button.active {
+.cta.active {
   animation: bounce 0.3s ease-out 1;
+  z-index: 100;
 }
 
-button.active span span:nth-of-type(1) {
+.cta.active span span:nth-of-type(1) {
   animation: anim1 0.4s ease-out 1;
 }
-button.active span span:nth-of-type(2) {
+.cta.active span span:nth-of-type(2) {
   animation: anim2 0.4s ease-out 1;
 }
-button.active span span:nth-of-type(3) {
+.cta.active span span:nth-of-type(3) {
   animation: anim3 0.4s ease-out 1;
 }
-button.active span span:nth-of-type(4) {
+.cta.active span span:nth-of-type(4) {
   animation: anim4 0.4s ease-out 1;
 }
-button.active span span:nth-of-type(5) {
+.cta.active span span:nth-of-type(5) {
   animation: anim5 0.4s ease-out 1;
 }
-button.active span span:nth-of-type(6) {
+.cta.active span span:nth-of-type(6) {
   animation: anim6 0.4s ease-out 1;
 }
-button.active span span:nth-of-type(7) {
+.cta.active span span:nth-of-type(7) {
   animation: anim7 0.4s ease-out 1;
 }
-button.active span span:nth-of-type(8) {
+.cta.active span span:nth-of-type(8) {
   animation: anim8 0.4s ease-out 1;
 }
 
