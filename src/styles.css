@@ -355,12 +355,9 @@ tr:hover #sidebar-menu  a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
-
-
- 
 }
 
+/* properties bearly worked, better not touch it */
 .cta  button {
   color: #F8C332;
   font-size: 20px;
@@ -490,6 +487,7 @@ tr:hover #sidebar-menu  a {
   animation: anim8 0.4s ease-out 1;
 }
 
+/* rest of button animation, do not touch */
 @keyframes anim1 {
   0%{transform: scaleY(0.5);opacity: 0;}
   50%{transform: translateY(-10px) scaleY(1.4); opacity: 1;}
@@ -531,6 +529,7 @@ tr:hover #sidebar-menu  a {
   100%{transform: rotate(-30deg) translateY(16px) scaleY(0.5);opacity: 0;}
 }
 
+/*this just a spacer between container 3 and 5, maybe it shoud have some kind of additional animation*/
 #container-4 {
     background-color: #3F0F6C;
     height: 100px;
@@ -544,6 +543,7 @@ tr:hover #sidebar-menu  a {
   padding: 20px;
 }
 
+/*this is the gallery div*/
 #container-5 {
     background-color: #FDEFEC;
     border-style: solid;
@@ -557,7 +557,7 @@ tr:hover #sidebar-menu  a {
     gap: 200px;
 }
 
-
+/*text and title is aligned to the right*/
 #highlight-container-5 {
   width: 300px;
   height: 340px;
@@ -576,7 +576,7 @@ tr:hover #sidebar-menu  a {
 
 
 
-
+/*3x3 grid was made for the gallery*/
 #grid-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -592,8 +592,9 @@ tr:hover #sidebar-menu  a {
   background-color: #2A0A48;
 }
 
-#grid-item1 {
-  background-color:red;
+#grid-item-1 {
+  background-image: url("../public/img/grid-img-1.png");
+  background-size: cover;
 }
 
 
