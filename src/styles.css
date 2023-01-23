@@ -586,7 +586,24 @@ tr:hover #sidebar-menu  a {
 }
 
 #grid-item-2 {
+  background-image: url("../public/img/grid-img-2.png");
+  background-size: cover;
+}
+#grid-item-1 {
   background-image: url("../public/img/grid-img-1.png");
+  background-size: cover;
+}
+#grid-item-3 {
+  background-image: url("../public/img/grid-img-3.png");
+  background-size: cover;
+}
+#grid-item-4 {
+  background-image: url("../public/img/grid-img-4.png");
+  background-size: cover;
+}
+
+#grid-item-5 {
+  background-image: url("../public/img/grid-img-6.png");
   background-size: cover;
 }
 
