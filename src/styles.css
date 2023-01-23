@@ -313,7 +313,7 @@ tr:hover #sidebar-menu  a {
 
 #image-container-3 img {
   height: 350px;
-  z-index: -1;
+  z-index: 0;
   padding-top: 25px;
   
   
@@ -347,11 +347,10 @@ tr:hover #sidebar-menu  a {
   margin: 50px 0 50px 0;
   position: absolute;
   bottom: 0;
-  z-index: 100;
+  z-index: 5;
   font-size: 20px;
   letter-spacing:1px;
   text-decoration: none;
-  z-index: 150;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -363,7 +362,7 @@ tr:hover #sidebar-menu  a {
   font-size: 20px;
   letter-spacing:1px;
   text-decoration: none;
-  z-index: 150;
+  z-index: 5;
   background: inherit;
   border:none;
   
@@ -376,7 +375,7 @@ tr:hover #sidebar-menu  a {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 5;
 }
 
 .cta  span span {
@@ -387,35 +386,35 @@ tr:hover #sidebar-menu  a {
   width: 2px;
   background: #3F0F6C;
   opacity: 0;
-  z-index: 100;
+  z-index: 5;
 }
 
 .cta  span span:nth-of-type(1) {
   top: -20px;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 5;
 }
 
 .cta  span span:nth-of-type(2) {
   bottom: -20px;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 5;
 }
 
 .cta  span span:nth-of-type(3) {
   top:0;
   bottom: 0;
   left: -10px;
-  z-index: 100;
+  z-index: 5;
 }
 
 .cta  span span:nth-of-type(4) {
   top:0;
   bottom: 0;
   right: -10px;
-  z-index: 100;
+  z-index: 5;
 }
 
 .cta  span span:nth-of-type(5) {
@@ -423,7 +422,7 @@ tr:hover #sidebar-menu  a {
   left: -70%;
   right: 0;
   transform:rotate(-30deg);
-  z-index: 100;
+  z-index: 5;
 }
 
 .cta  span span:nth-of-type(6) {
@@ -431,7 +430,7 @@ tr:hover #sidebar-menu  a {
   left: 0;
   right: -70%;
   transform:rotate(30deg);
-  z-index: 100;
+  z-index: 5;
 }
 
 .cta  span span:nth-of-type(7) {
@@ -439,7 +438,7 @@ tr:hover #sidebar-menu  a {
   right: 0;
   left: -70%;
   transform:rotate(30deg);
-  z-index: 100;
+  z-index: 5;
 }
 
 .cta  span span:nth-of-type(8) {
@@ -447,7 +446,7 @@ tr:hover #sidebar-menu  a {
   left: 0;
   right: -70%;
   transform:rotate(-30deg);
-  z-index: 100;
+  z-index: 5;
 }
 
 /* button animation */
@@ -459,7 +458,7 @@ tr:hover #sidebar-menu  a {
 
 .cta.active {
   animation: bounce 0.3s ease-out 1;
-  z-index: 100;
+  z-index: 5;
 }
 
 .cta.active span span:nth-of-type(1) {
@@ -592,11 +591,40 @@ tr:hover #sidebar-menu  a {
   background-color: #2A0A48;
 }
 
-#grid-item-1 {
+#grid-item-2 {
   background-image: url("../public/img/grid-img-1.png");
   background-size: cover;
 }
 
+#grid-container .grid-item {
+  position: relative;
+}
+
+#grid-container .grid-item #overlay-over-grid {
+  display: none; /* hide the overlay by default */
+  position: absolute; /* position the overlay absolutely within the grid item */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* give the overlay a semi-transparent black background */
+  z-index: 1; /*the overlay is on top of the grid item's content */
+}
+
+#grid-container .grid-item:hover #overlay-over-grid {
+  display: block; /* display the overlay when the grid item is hovered */
+}
+
+#grid-container .grid-item #overlay-over-grid button {
+  position: absolute; /* position the button absolutely within the overlay */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center the button within the overlay */
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 2; /*the button is on top of the overlay */
+}
 
 
 footer {
