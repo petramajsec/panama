@@ -344,7 +344,7 @@ tr:hover #sidebar-menu  a {
   background: #3F0F6C;
   cursor:pointer;
   border-radius: 25px;
-  margin: 50px;
+  margin: 50px 0 50px 0;
   position: absolute;
   bottom: 0;
   z-index: 100;
@@ -560,8 +560,22 @@ tr:hover #sidebar-menu  a {
 
 #highlight-container-5 {
   width: 300px;
-  padding-left: 100px;
+  height: 340px;
+  padding-left: 120px;
+  position: relative;
+  align-self:center;
+  text-align: end;
 }
+
+#button-container-5 .cta {
+  gap: 20px 0 0 0;
+  position: absolute;
+  right: 0;
+}
+
+
+
+
 
 #grid-container{
   display: grid;
