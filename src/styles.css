@@ -103,7 +103,6 @@ a:hover object {
   transition: all 0.3s ease-in-out;
 }
 
-/* Remove a grey background color on mouse-over */
 #sidebar-menu  a:hover {
   text-decoration: none;
   background-position: 0;
@@ -687,15 +686,56 @@ footer {
 }
 
 #contact-form {
-  width:200px;
-  height: 150px;
-  background-color: #2A0A48;
+  width:auto;
+  height: 160px;
+  
+}
+
+#maintance-note{
+  height: 160px;
 }
 
 #contact-form a {
-  color: #F6BA13;
-  font-size: 25px;
-}	
+  padding: 14px 16px;
+  font-size:30px;
+  display: block;
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    #FBDC89,
+    #FBDC89 50%,
+    #3F0F6C 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out; 
+}
+
+#contact-form a:before {
+  content: '';
+  background: #FBDC89;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact-form a:hover {
+  text-decoration: none;
+  background-position: 0;
+}
+
+#contact-form a:hover:before {
+  width:100%;
+}
 
 @font-face {
   font-family: Nunito;
