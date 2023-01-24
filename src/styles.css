@@ -658,7 +658,25 @@ footer {
 .social-icons {
   width: 500px;
   height: 50px;
+  margin-bottom: 30px;
   background-color:#C1BCC7 ;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.social-icons object{
+  -webkit-filter: grayscale(0);
+  filter: none;
+  transform: scale(1); /* scale is set to 1 by default */
+  transition: transform 0.5s ease; /* transition effect for the transform property */
+  
+}
+
+.social-icons object:hover{
+  -webkit-filter: grayscale(0);
+  filter: none;
+  transform: scale(1.5); 
 }
 
 #contact-form {
