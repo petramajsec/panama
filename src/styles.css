@@ -651,8 +651,14 @@ footer {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
-    gap: 450px;
+    gap: 100px;
     align-items: flex-end; /*to be changed*/
+}
+
+#footer-div-right{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .social-icons {
@@ -660,9 +666,10 @@ footer {
   height: 50px;
   margin-bottom: 30px;
   background-color:#C1BCC7 ;
-  display: flex;
+  display:flex;
   flex-direction: row;
   justify-content: flex-end;
+ 
 }
 
 .social-icons object{
