@@ -536,6 +536,8 @@ tr:hover #sidebar-menu  a {
   padding: 20px;
 }
 
+
+
 /*this is the gallery div*/
 #container-5 {
     background-color: #FDEFEC;
@@ -565,9 +567,6 @@ tr:hover #sidebar-menu  a {
   position: absolute;
   right: 0;
 }
-
-
-
 
 /*3x3 grid was made for the gallery*/
 #grid-container{
@@ -646,9 +645,32 @@ tr:hover #sidebar-menu  a {
 
 
 footer {
-    background-color: #401435;
+    background-color: #F37D68;
     height: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 450px;
+    align-items: flex-end; /*to be changed*/
 }
+
+.social-icons {
+  width: 500px;
+  height: 50px;
+  background-color:#C1BCC7 ;
+}
+
+#contact-form {
+  width:200px;
+  height: 150px;
+  background-color: #2A0A48;
+}
+
+#contact-form a {
+  color: #F6BA13;
+  font-size: 25px;
+}	
 
 @font-face {
   font-family: Nunito;
