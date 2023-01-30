@@ -852,4 +852,76 @@ footer {
     font-family: Nunito;
   }
 
-  
+  @media only screen and (max-width: 1612px) {
+    /* For smaller screens:
+    for this scenario we will just increase the width of the whole page from 70% to 90% */
+    .center{
+      width:90%;
+    }
+  } 
+
+  @media only screen and (max-width: 1264px) {
+    /* fixing the conteiner-5 */
+    #container-5 {
+      gap:100px;
+    }
+
+    #highlight-container-5{
+      width:200px;
+      height: 450px;
+      padding-left: 50px;
+    }
+  } 
+
+  @media only screen and (max-width: 1052px) {
+    /* decreasing the font size*/
+    #grid-container{
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      padding-right: 30px;
+    }
+    
+    .grid-item {
+      width: 150px;
+      height: 90px;
+    }
+
+    #container-3{
+      gap: 50px;
+    }
+
+     h2 {
+      font-size: 25px;
+      margin-top: 35px;
+    }
+
+    #highlight-container-5{
+      width:200px;
+      height: 350px;
+      padding-left: 50px;
+    }
+  } 
+
+  @media only screen and (max-width: 796px) {
+    
+    #container-5 {
+      gap:50px;
+    }
+
+    .grid-item {
+      width: 100px;
+      height: 70px;
+    } 
+
+    #button-menu h2 {
+      color:blue;
+    }
+
+    #image-container-3{
+      padding-left: 50px;
+      max-height:300px;
+      max-width: 300px;
+      margin-top: 50px;
+    }
+    
+  } 
