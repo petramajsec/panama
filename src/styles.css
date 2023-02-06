@@ -1166,7 +1166,24 @@ button {
 
 .landing-page {
   background-color: #fdefec;
-  height: 1800px;
 }
 }
+
+@media only screen and (min-width: 2008px) {
+  /*max dimesions*/
+ 
+#container-3 {
+  justify-content: space-evenly;
+}
+
+#container-5 {
+  justify-content: space-evenly;
+}
+
+
+
+
+}
+
+
 
