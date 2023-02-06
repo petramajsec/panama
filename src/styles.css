@@ -951,12 +951,17 @@ button {
   /* fixing the conteiner-5 */
   #container-5 {
     gap: 100px;
+    margin:auto;
   }
 
   #highlight-container-5 {
     width: 200px;
     height: 450px;
     padding-left: 50px;
+  }
+
+  #highlight-container-5 h2{
+    padding: 0;
   }
 }
 
@@ -985,19 +990,64 @@ button {
   #highlight-container-5 {
     width: 200px;
     height: 350px;
-    padding-left: 50px;
+    padding: 0;
   }
 
   #button-menu h2 {
     color: blue;
     visibility: hidden;
   }
+
+  #highlight-container-5 h2{
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 946px) {
+  /*the menu title was removed*/
+
+
+  #highlight-container-5{
+    align-self: center;
+    text-align:left;
+    width: 300px;
+    margin:auto;
+}
+  #highlight-container-5 h2{
+  padding: 0;
+}
+#container-5{
+  height: fit-content;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:0;
+}
+
+#highlight-container-5{
+    align-self: center;
+    text-align:left;
+    width: 300px;
+    margin:auto;
+    padding: 0;
+}
+
+#highlight-container-5 .cta {
+  right: 150px;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 0;
+}
 }
 
 @media only screen and (max-width: 796px) {
   /*the menu title was removed*/
   #container-5 {
     gap: 50px;
+    margin:auto;
+    height: fit-content;
+    
   }
 
   .grid-item {
@@ -1017,12 +1067,44 @@ button {
     max-width: 300px;
     margin-top: 50px;
   }
+
+  #highlight-container-5{
+    align-self: center;
+    text-align:left;
+    width: 300px;
+    margin:auto;
+}
+  #highlight-container-5 h2{
+  padding: 0;
+}
+#container-5{
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:0;
+}
+
+#highlight-container-5{
+    align-self: center;
+    text-align:left;
+    width: 300px;
+    margin:auto;
+}
+
+#highlight-container-5 .cta {
+  right: 150px;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 0;
+}
 }
 
 @media only screen and (max-width: 796px) {
   /*the svg icons were removed from the conteiner-2*/
   #container-1 {
     justify-content: flex-start;
+    margin:auto;
     
   }
 
@@ -1035,7 +1117,8 @@ button {
     }
 
   #container-2{
-    margin: 0 0 10px 0;
+    margin:auto;
+    height: fit-content;
   }
 
   #footer-text-above-icons h3 {
@@ -1043,7 +1126,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 728px) {
   /*min dimension, ig for mobile view*/
  .main-title h1 {
   font-size: 90px;
@@ -1054,6 +1137,7 @@ button {
   flex-direction: column;
   flex-wrap: wrap;
   height: 450px;
+  margin:auto;
  }
 
  .cta {
@@ -1072,18 +1156,7 @@ button {
   margin-top: 70px;
 }
 
-#container-5{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap:0;
-}
 
-#highlight-container-5{
-    align-self: center;
-    text-align:left;
-    width: 300px;
-}
 
 #button-container-5 .cta {
   gap: 0;
