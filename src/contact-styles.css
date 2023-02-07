@@ -1,6 +1,31 @@
 body { background: #FDEFEC; }
 form { max-width:420px; margin:50px auto; }
 
+@font-face {
+    font-family: "Nunito";
+    src: url("../public/font/Nunito/static/Nunito-ExtraBold.ttf");
+  }
+
+  h1 {
+    color: #f6a192;
+    font-size: 40px;
+    font-weight: 1000;
+    -webkit-text-stroke: 1px #2a0a48;
+    height: auto;
+    width: auto;
+    font-family: Nunito;
+  }
+
+  p {
+    color: #0A0212;
+    font-size: 20px;
+    font-weight: 300;
+
+    height: auto;
+    width: auto;
+    font-family: Nunito;
+  }
+
 #menu{
     width: 100%;
     height: 200px;
@@ -19,43 +44,53 @@ form { max-width:420px; margin:50px auto; }
 .c-sides {
     width: 15%;
     height: 1200x;
-    background-color: blueviolet;
+    background: rgb(175,111,235);
+    background: linear-gradient(90deg, rgba(175,111,235,1) 0%, rgba(63,15,108,1) 43%);
 }
 
 #c-highlight-form{
     width: 70%;
     height: 1200px;
-    background-color:burlywood;
+    background-color:#FDEFEC;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    border-radius: 20px;
 
 }
 
 #c-upper-highlight{
-    width:400px;
+    width:700px;
     height: 400px;
     background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
 }
 
 #c-title{
-    width:200px;
-    height: 100px;
+    width:600px;
+    height: 150px;
     background-color: #CC6666;
 }
 
 #c-text{
     width:400px;
     height:200px;
-    background-color:aqua;
+   
 }
 
 #contact-form{
-    width:600px;
-    height: 400px;
-    background-color: aquamarine;
+    width:900px;
+    height: 600px;
+    
+    border:7px solid #F6A192;
+    border-radius: 15px;
+   
 }
 
 
@@ -63,15 +98,15 @@ form { max-width:420px; margin:50px auto; }
   color:white;
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
+  font-size: 25px;
+  border-radius: 25px;
   line-height: 22px;
   background-color: transparent;
   border:2px solid #CC6666;
   transition: all 0.3s;
   padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
+  margin-bottom: 30px;
+  width:500px;
   box-sizing: border-box;
   outline:0;
 }
