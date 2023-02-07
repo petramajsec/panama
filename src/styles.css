@@ -40,7 +40,7 @@ header {
   display: none;
   text-align: left;
   font-size: 25px;
-  margin: 10px 0 0 45px;
+  margin: 50px 0 0 45px;
   z-index: 10;
 }
 
@@ -144,10 +144,10 @@ tr:hover #sidebar-menu a {
 #menu {
   display: flex;
   margin-top: 2.5%;
-  margin-left: 10px;
+  
   justify-content: flex-start;
   flex-wrap: wrap;
-  width: 20%;
+  width: 200px;
   height: auto;
 }
 
@@ -939,6 +939,10 @@ button {
   font-family: Nunito;
 }
 
+ /* MEDIA QUERY SECTION */
+
+
+
 @media only screen and (max-width: 1612px) {
   /* For smaller screens:
     for this scenario we will just increase the width of the whole page from 70% to 90% */
@@ -973,6 +977,10 @@ button {
     padding-right: 30px;
   }
 
+  #menu h2 {
+    visibility: hidden;
+  }
+
   .grid-item {
     width: 150px;
     height: 90px;
@@ -993,9 +1001,9 @@ button {
     padding: 0;
   }
 
-  #button-menu h2 {
-    color: blue;
-    visibility: hidden;
+  #menu {
+    height:100px;
+    width: 18%;
   }
 
   #highlight-container-5 h2{
@@ -1025,6 +1033,14 @@ button {
   gap:0;
 }
 
+.center-animation object {
+  display: none;
+}
+
+#container-2{
+  height: 5%;
+}
+
 #highlight-container-5{
     align-self: center;
     text-align:left;
@@ -1036,10 +1052,27 @@ button {
 #highlight-container-5 .cta {
   right: 150px;
   font-size: 15px;
-  border-radius: 10px;
+  border-radius: 25px;
   padding: 0;
 }
+
+#text-conteiner-1 {
+  width: 400px;
+ }
 }
+
+@media only screen and (max-width: 910px) {
+  #menu {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  #highlight-container-5 .cta {
+    right: 100px;
+    padding: 0;
+  }
+}
+
 
 @media only screen and (max-width: 796px) {
   /*the menu title was removed*/
@@ -1095,50 +1128,44 @@ button {
 #highlight-container-5 .cta {
   right: 150px;
   font-size: 15px;
-  border-radius: 10px;
+  border-radius: 25px;
   padding: 0;
 }
 }
 
 @media only screen and (max-width: 796px) {
   /*the svg icons were removed from the conteiner-2*/
-  #container-1 {
-    justify-content: flex-start;
+  
+  .main-title h1 {
+    font-size: 90px;
+   }
+  
+   #container-1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-self: flex-start;
+    height: 450px;
     margin:auto;
-    
-  }
+   }
 
-  #center-animation object {
-    display: none;
-  }
-
-  #container-2 .center-animation {
-      display: none;
-    }
-
+  
   #container-2{
-    margin:auto;
-    height: fit-content;
+    height: 5%;
   }
 
   #footer-text-above-icons h3 {
     font-size: 25px;
   }
+
+  .landing-page {
+    height: fit-content;
+  }
 }
 
 @media only screen and (max-width: 728px) {
   /*min dimension, ig for mobile view*/
- .main-title h1 {
-  font-size: 90px;
- }
 
- #container-1{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 450px;
-  margin:auto;
- }
 
  .cta {
   width: 120px;
@@ -1157,15 +1184,15 @@ button {
 }
 
 
-
 #button-container-5 .cta {
   gap: 0;
   position: absolute;
   right: 150px;
+  top:150px;
 }
 
-.landing-page {
-  background-color: #fdefec;
+#container-5 {
+  height: 500px;
 }
 }
 
