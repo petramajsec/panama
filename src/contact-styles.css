@@ -18,7 +18,7 @@ form { max-width:420px; margin:50px auto; }
 
   p {
     color: #0A0212;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
     font-family: Nunito;
   }
@@ -64,15 +64,69 @@ form { max-width:420px; margin:50px auto; }
     align-items: center;
     border-radius: 20px;
 
+
 }
+
+/*playing wiyh the arrows, container on top of other divs*/
+
+#down-arrow-container{
+  z-index: 2;
+}
+.down-arrow {
+  position: absolute;
+  
+  width: 0;
+  height: 90px;
+  border: 6px solid purple;
+  border-radius: 8px;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.left {
+  top: 450px;
+  left: calc(50% - 400px);
+}
+
+.right {
+  top: 450px;
+  left: calc(50% + 400px);
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 36px;
+  left: -30px;
+  width: 48px;
+  height: 48px;
+  border-bottom: 12px solid purple;
+  border-right: 12px solid purple;
+  border-radius: 10px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 60px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+
+
+
 
 #c-upper-highlight{
     width:700px;
     height: 400px;
-    background-color: red;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     justify-content: space-around;
 
 }
@@ -80,11 +134,12 @@ form { max-width:420px; margin:50px auto; }
 #c-title{
     width:600px;
     height: 150px;
-    background-color: #CC6666;
+    margin-left: 150px;
+    
 }
 
 #c-text{
-    width:400px;
+    width:450px;
     height:200px;
    
 }
