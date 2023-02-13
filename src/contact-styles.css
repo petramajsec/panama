@@ -330,7 +330,7 @@ left and other is on the right*/
     margin-left: 20px;
     padding-left: 100px;
     padding-bottom: 50px;
-    border-bottom:20px double #F8C332;
+    border-bottom:10px groove #F8C332;
     border-radius: 10px;
     
 }
