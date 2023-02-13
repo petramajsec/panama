@@ -501,3 +501,41 @@ textarea {
 }
 
 
+@media only screen and (max-width: 1543px) {
+  /*smaller resolution, bouncing objects were hidden*/
+  .down-arrow {
+    visibility: hidden;
+  }
+
+  .x object {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 1357px) {
+ /*input width will get smaller*/
+  input.feedback-input {
+    max-width: 70%;
+  }
+
+  textarea.feedback-input {
+    max-width: 70%;
+  }
+
+  #contact-form {
+    padding:0;
+  }
+
+  form{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  input[value='Send'] {
+    max-width: 60%;
+    margin: auto;
+  }
+}
