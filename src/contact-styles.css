@@ -33,9 +33,18 @@ form { max-width:420px; margin:50px auto; }
 
 #menu{
     width: 100%;
-    height: 200px;
+    height: 300px;
     background-color: chocolate;
-}
+    background-image: url("../public/img/upscaled-bg-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex;
+    flex-direction: row;
+  }
+
 
 #c-total {
     width:100%;
@@ -48,15 +57,17 @@ form { max-width:420px; margin:50px auto; }
 
 .c-sides {
     width: 15%;
-    height: 1200x;
+    height: 1500px;
     background: rgb(63,15,108);
+    position: relative;
 background: linear-gradient(90deg, rgba(63,15,108,1) 19%, rgba(42,10,72,1) 87%);  
 }
 
-/*fucking with bouncing element*/
-img, div {
-  width: 100px;
-  height: 100px;
+/*adding the bouncing element*/
+.x object {
+  width: 400px;
+  height: 400px;
+  position: absolute;
 }
 
 .x {
@@ -69,13 +80,14 @@ img, div {
 
 @keyframes x {
   100% {
-    transform: translateX(calc(100vw - 100px));
+    transform: translateX( 200px );
+    /*transform: rotate3d(0, 0, 1, 90deg); */
   }
 }
 
 @keyframes y {
   100% {
-    transform: translateY(calc(100vh - 100px));
+    transform: translateY( 1000px );
   }
 }
 

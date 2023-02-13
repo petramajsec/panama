@@ -12,7 +12,40 @@
         
     </head>
     <body>
-       <header id="menu">
+        <header id="menu">
+            <h2>Menu</h2> 
+            <div id="button-menu">
+                <button id="hamburger-menu" onclick="myFunction()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>   
+                    <nav id="sidebar-menu">
+                        <table>
+                            <tr>
+                                <td><object data="../public/svg-icons/icon-beer.svg" > </object></td>
+                                <td><a href="#">Home</a></td>
+                            </tr>
+                            <tr>
+                                <td><object data="../public/svg-icons/icon-gold-bag.svg" > </object></td>
+                                <td><a href="#">Store</a></td>
+                            </tr>
+                            <tr>
+                                <td><object data="../public/svg-icons/icon-medal.svg" > </object></td>
+                                <td><a href="#">Cosplay</a></td>
+                            </tr>
+                            <tr>
+                                <td><object data="../public/svg-icons/icon-shield.svg" > </object></td>
+                                <td><a href="#">Tutorials</a></td>
+                            </tr>
+                            <tr>
+                                <td><object data="../public/svg-icons/icon-parchment.svg" > </object></td>
+                                <td><a href="contact-page.html">Contact</a></td>
+                            </tr>
+                        </table>
+                    </nav>
+                    <script src="side-menu.js"></script>
+                </button>
+            </div>
        </header>
        <main>
         <div id="c-total">
@@ -21,8 +54,10 @@
                 <div class="down-arrow right"></div>
             </div>
             <div class="c-sides">
-                <div class="x">
-                    <img class="y" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" alt="codepen" />
+                <div class="c-sides s-right">
+                    <div class="x">
+                        <object class="y" data="../public/svg-icons/abstract2_adobe_express.svg"></object>
+                    </div>
                 </div>
             </div>
             <div id="c-highlight-form">
@@ -44,7 +79,11 @@
                     </form>
                 </div>
             </div>
-            <div class="c-sides s-right"></div>
+            <div class="c-sides s-right">
+                <div class="x">
+                    <object class="y" data="../public/svg-icons/abstract2_adobe_express.svg"></object>
+                </div>
+            </div>
         </div>
        </main>
        <footer id="footer">
@@ -64,5 +103,6 @@
                 </div>
             </div>
        </footer>
+       <div id="overlay"></div>
     </body>
 </html>
