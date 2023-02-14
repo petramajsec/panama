@@ -511,15 +511,16 @@ textarea {
 @media only screen and (max-width: 1357px) {
  /*input width will get smaller*/
   input.feedback-input {
-    max-width: 70%;
+    max-width: 80%;
   }
 
   textarea.feedback-input {
-    max-width: 70%;
+    max-width: 80%;
   }
 
   #contact-form {
     padding:0;
+    width:90%
   }
 
   form{
