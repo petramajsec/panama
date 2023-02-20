@@ -59,7 +59,7 @@ form { max-width:420px; margin:50px auto; }
     font-size: 40px;
     font-weight: 1000;
     -webkit-text-stroke: 1px #2a0a48;
-    display: flex-start;
+    display: flex;
     margin: 25px 0 0 15px;
     font-family: Nunito;
     z-index: 10;
@@ -196,6 +196,12 @@ form { max-width:420px; margin:50px auto; }
     left: 0;
   }
 
+#main {
+  width:100%;
+  margin:0;
+  display:flex;
+}
+
 #c-total {
     width:100%;
     height: 1500px;
@@ -203,6 +209,7 @@ form { max-width:420px; margin:50px auto; }
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    
     z-index: 0;
 }
 
