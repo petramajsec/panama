@@ -35,7 +35,7 @@ form { max-width:420px; margin:50px auto; }
 
   
 #menu{
-    width: 100%;
+    width: 100vw;
     height: 300px;
     background-image: url("../public/img/upscaled-bg-image.png");
     background-repeat: no-repeat;
@@ -201,14 +201,14 @@ form { max-width:420px; margin:50px auto; }
   }
 
 #main {
-  width:100%;
+  width:100vw;
   margin:0;
   display:flex;
   flex-direction: row;
 }
 
 #c-total {
-    width:70%;
+    width:100vw;
     height: 1500px;
     background-color: black;
     display: flex;
@@ -217,7 +217,7 @@ form { max-width:420px; margin:50px auto; }
 }
 
 .c-sides {
-    width: 15%;
+    width: 20vw;
     height: 1500px;
     background: rgb(63,15,108);
     position: relative;
@@ -310,6 +310,7 @@ form { max-width:420px; margin:50px auto; }
 
 
 #footer {
+  width: 100vw;
   background-color: #f37d68;
   height: 300px;
   display: flex;
