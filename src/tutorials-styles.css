@@ -212,6 +212,8 @@ form { max-width:420px; margin:50px auto; }
     height: 1500px;
     background-color: black;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #f6a192;
     z-index: 0;
 }
@@ -222,6 +224,10 @@ form { max-width:420px; margin:50px auto; }
     background: rgb(63,15,108);
     position: relative;
     background: linear-gradient(90deg, rgba(63,15,108,1) 19%, rgba(42,10,72,1) 87%);  
+}
+
+#t-upper-highlight{
+  height: 500px;
 }
 
 /*adding the bouncing element*/
@@ -255,14 +261,15 @@ form { max-width:420px; margin:50px auto; }
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 600px; /* adjust as needed */
+    max-width: 600px; 
     margin: 100px auto;
+    height: 600PX;
   }
   
   .carousel-slide {
     display: flex;
     width: 100%;
-    height: 400px; /* adjust as needed */
+    height: 400px; 
     overflow-x: hidden;
   }
   
@@ -292,20 +299,6 @@ form { max-width:420px; margin:50px auto; }
   .dot.active {
     background-color: #555;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
